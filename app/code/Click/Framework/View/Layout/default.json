@@ -1,0 +1,28 @@
+{
+  "div": {
+    "children": [
+      {
+        "block": {
+          "model": "Click\\Framework\\View\\Model\\Base",
+          "template": "/code/app/code/Click/Framework/View/Template/Default.php",
+          "children": [
+            {
+              "block": {
+                "model": "Click\\Framework\\View\\Model\\Base",
+                "template": "/code/app/code/Click/Framework/View/Template/Alternative.php",
+                "children": []
+              }
+            },
+            {
+              "block": {
+                "model": "Click\\Framework\\View\\Model\\Base",
+                "template": "/code/app/code/Click/Framework/View/Template/Alternative.php",
+                "children": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

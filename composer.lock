@@ -1,0 +1,408 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0e837f5db4475dad21f60376221a2fdd",
+    "packages": [
+        {
+            "name": "brick/app",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/app.git",
+                "reference": "84cd257770be3ec0c9178aa7f829afa8d7dfc74e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/app/zipball/84cd257770be3ec0c9178aa7f829afa8d7dfc74e",
+                "reference": "84cd257770be3ec0c9178aa7f829afa8d7dfc74e",
+                "shasum": ""
+            },
+            "require": {
+                "brick/di": "~0.3.0",
+                "brick/event": "~0.1.0",
+                "brick/html": "~0.1.0",
+                "brick/http": "~0.2.0",
+                "brick/reflection": "~0.2.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "brick/date-time": "0.1.*",
+                "brick/form": "0.1.*",
+                "brick/geo": "0.2.*",
+                "doctrine/annotations": "1.*",
+                "doctrine/dbal": "2.*",
+                "doctrine/orm": "2.*",
+                "php-coveralls/php-coveralls": "2.*",
+                "phpunit/phpunit": "7.*"
+            },
+            "suggest": {
+                "brick/date-time": "To use the DateTimeObjectPacker",
+                "brick/form": "To use FormView and FormTableView",
+                "brick/geo": "To use the GeometryObjectPacker",
+                "doctrine/annotations": "To use the annotation-based plugins",
+                "doctrine/dbal": "To use the TransactionalPlugin",
+                "doctrine/orm": "To use the DoctrineObjectPacker"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\App\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Web application framework",
+            "keywords": [
+                "app",
+                "application",
+                "brick",
+                "controller",
+                "view"
+            ],
+            "time": "2019-12-24T14:15:55+00:00"
+        },
+        {
+            "name": "brick/di",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/di.git",
+                "reference": "e7090ebabb20a398baef4ec76d8cdc1551fb9d9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/di/zipball/e7090ebabb20a398baef4ec76d8cdc1551fb9d9b",
+                "reference": "e7090ebabb20a398baef4ec76d8cdc1551fb9d9b",
+                "shasum": ""
+            },
+            "require": {
+                "brick/reflection": "^0.2.4",
+                "doctrine/annotations": "1.*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "2.*",
+                "phpunit/phpunit": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Di\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Dependency injection and IoC framework",
+            "keywords": [
+                "brick",
+                "dependency injection",
+                "di",
+                "inversion of control",
+                "ioc"
+            ],
+            "time": "2019-12-24T14:31:27+00:00"
+        },
+        {
+            "name": "brick/event",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/event.git",
+                "reference": "ac1154e7d6b4b75fd73edea292aab1faa6f60fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/event/zipball/ac1154e7d6b4b75fd73edea292aab1faa6f60fd1",
+                "reference": "ac1154e7d6b4b75fd73edea292aab1faa6f60fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "2.*",
+                "phpunit/phpunit": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Event\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event dispatching library",
+            "keywords": [
+                "brick",
+                "event",
+                "eventdispatcher"
+            ],
+            "time": "2019-12-03T11:40:03+00:00"
+        },
+        {
+            "name": "brick/html",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/html.git",
+                "reference": "6a4fb3e29135ec16bab8d8099e8df8a9595efd3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/html/zipball/6a4fb3e29135ec16bab8d8099e8df8a9595efd3c",
+                "reference": "6a4fb3e29135ec16bab8d8099e8df8a9595efd3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*",
+                "satooshi/php-coveralls": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Html\\": "src/",
+                    "Brick\\Html\\Tests\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTML generation library",
+            "keywords": [
+                "brick",
+                "html"
+            ],
+            "time": "2017-10-06T14:34:20+00:00"
+        },
+        {
+            "name": "brick/http",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/http.git",
+                "reference": "99830a543b8a3e9ffa35d8a7f494b4529af13018"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/http/zipball/99830a543b8a3e9ffa35d8a7f494b4529af13018",
+                "reference": "99830a543b8a3e9ffa35d8a7f494b4529af13018",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "2.*",
+                "phpunit/phpunit": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTTP request and response library",
+            "keywords": [
+                "brick",
+                "http",
+                "request",
+                "response"
+            ],
+            "time": "2020-01-09T21:00:33+00:00"
+        },
+        {
+            "name": "brick/reflection",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/reflection.git",
+                "reference": "1bd89d6db9c392e5b779f947e56eed3c5ca29e64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/reflection/zipball/1bd89d6db9c392e5b779f947e56eed3c5ca29e64",
+                "reference": "1bd89d6db9c392e5b779f947e56eed3c5ca29e64",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "2.*",
+                "phpunit/phpunit": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Low-level tools to extend PHP reflection capabilities",
+            "keywords": [
+                "brick",
+                "reflection"
+            ],
+            "time": "2019-11-05T18:45:16+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2019-10-01T18:55:10+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+                "reference": "5242d66dbeb21a30dd8a3e66bf7a73b66e05e1f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "lexer",
+                "parser",
+                "php"
+            ],
+            "time": "2019-10-30T14:39:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
